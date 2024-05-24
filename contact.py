@@ -22,7 +22,7 @@ class Contact_operations:
         
         
 
-c1 = Contact_person("Pranesh","kishan","9123456789","pranesh@gmail.com")   
+c1 = Contact_person("First name","Last name","Phone number","yourgmail@gmail.com")   
 
 a1 = Contact_operations()
 a1.save_contact(c1)
