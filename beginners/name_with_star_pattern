@@ -1,0 +1,102 @@
+#n refers to the no. of rows & columns
+n = 7
+
+
+#P
+for i in range(n):
+    for j in range(n):
+        if j == 0:
+            print('*',end=' ')
+        elif i<n/2 and j < n/2:
+            if i in range(1,n//2) and j in range(1,n//2):
+                print(' ',end=' ')
+            
+            else:
+                print('*', end=' ')
+            
+    print()
+    
+print('\n')
+
+
+#R
+for i in range(n):
+    for j in range(n):
+        if j == 0:
+            print('*',end=' ')
+        elif i<n/2 and j < n/2:
+            if i in range(1,n//2) and j in range(1,n//2):
+                print(' ',end=' ')
+            else:
+                print('*', end=' ')
+        elif i in range(n-3,n) and j < n/2:
+            if j == i-3:
+                print('*',end=' ')
+            else:
+                print(' ',end=' ')
+        
+    print()
+
+print('\n')
+
+#A
+for i in range(n):
+    for j in range(n):
+        if i == 0 or j == 0 or i == n//2 or j == n-1:
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+        
+    print() 
+
+print('\n')
+
+#N
+for i in range(n):
+    for j in range(n):
+        if j == 0 or j == n-1 or i == j:
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
+
+print('\n')
+
+#E
+for i in range(n):
+    for j in range(n):
+        if j == 0 or i == 0 or i == n//2 or i == n-1:
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
+
+print('\n')
+
+#S
+for i in range(n):
+    for j in range(n):
+        if i == 0 or i == n-1:
+            print('*', end = ' ')
+        elif i<n/2 and j == 0:
+            print('*',end=' ')
+        elif i == n//2 and j in range(0,n):
+            print('*',end=' ')
+        elif i > n//2 and j == n-1:
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
+
+print('\n')
+
+#H
+for i in range(n):
+    for j in range(n):
+        if j == 0 or j == n-1 or i == n//2:
+            print('*',end=' ')
+        else:
+            print(" ",end=' ')
+    print()
+
+print('\n')
